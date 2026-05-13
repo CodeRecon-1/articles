@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Articles</h1>
+
+{% for article in articles %}
+<div class="card">
+    <h2>
+        <a href="/articles/{{ article.id }}">
+            {{ article.title }}
+        </a>
+    </h2>
+</div>
+{% endfor %}
+
+{% endblock %}
